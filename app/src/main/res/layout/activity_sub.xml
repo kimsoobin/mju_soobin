@@ -14,26 +14,25 @@
         android:id="@+id/reLayout_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/reLayout_2"
         android:layout_marginTop="56dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="24dp"
         >
         <ImageView
+            android:id="@+id/imageView_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/android"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="32dp"
+            android:layout_centerHorizontal="true"
             />
 
         <TextView
+            android:id="@+id/textView_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Application"
             android:textSize="32dp"
-            android:layout_centerVertical="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="40dp"/>
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imageView_1"/>
 
     </RelativeLayout>
 
@@ -41,8 +40,9 @@
         android:id="@+id/reLayout_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp"
+        android:layout_below="@+id/reLayout_1"
         >
 
         <EditText
@@ -73,24 +73,31 @@
         android:layout_below="@+id/reLayout_2"
         >
 
-        <Button
-            android:id="@+id/button_1"
+        <TextView
+            android:id="@+id/textView_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="로그인"
-            android:textSize="16dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="72dp"
+            android:textSize="18dp"
+            android:layout_toLeftOf="@+id/textView_3"
             />
-
-        <Button
-            android:id="@+id/button_2"
+        <TextView
+            android:id="@+id/textView_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호찾기"
+            android:textSize="18dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            />
+        <TextView
+            android:id="@+id/textView_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="회원가입"
-            android:textSize="16dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="72dp"
+            android:textSize="18dp"
+            android:layout_toRightOf="@+id/textView_3"
             />
     </RelativeLayout>
 
