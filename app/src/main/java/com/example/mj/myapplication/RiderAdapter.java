@@ -4,7 +4,6 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -12,17 +11,17 @@ import android.widget.TextView;
 import java.util.List;
 
 /**
- * Created by mj on 2016-04-16.
+ * Created by mj on 2016-04-17.
  */
-public class Aadapter extends BaseAdapter{
-    
-    private List<RoomActivity> items;
-    
+public class RiderAdapter extends BaseAdapter {
+
+    private List<Rider> items;
+
     private LayoutInflater inflater;
     private Context context;
     private int layout_res_id;
-    
-    public Aadapter(Context context, int layout_res_id, List<RoomActivity> items){
+
+    public RiderAdapter(Context context, int layout_res_id, List<Rider> items){
         this.context = context;
         this.layout_res_id = layout_res_id;
         this.items = items;
@@ -46,15 +45,15 @@ public class Aadapter extends BaseAdapter{
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        RoomViewHolder room;
+        rRoomViewHolder room;
 
         convertView = inflater.inflate(layout_res_id, parent, false);
 
-        room = new RoomViewHolder();
-        room.imageview = (ImageView)convertView.findViewById(R.id.imageView_1);
-        room.title = (TextView)convertView.findViewById(R.id.textView_1);
-        room.contents = (TextView)convertView.findViewById(R.id.textView_2);
-        room.date = (TextView)convertView.findViewById(R.id.textView_3);
+        room = new rRoomViewHolder();
+        room.imageview = (ImageView)convertView.findViewById(R.id.rider_c_imageView_1);
+        room.title = (TextView)convertView.findViewById(R.id.rider_c_textView_1);
+        room.contents = (TextView)convertView.findViewById(R.id.rider_c_textView_2);
+        room.date = (TextView)convertView.findViewById(R.id.rider_c_textView_3);
 
         room.imageview.setImageResource(R.drawable.android);
         room.title.setText(items.get(position).title);
@@ -64,7 +63,7 @@ public class Aadapter extends BaseAdapter{
         return convertView;
     }
 
-    public class RoomViewHolder{
+    public class rRoomViewHolder{
         public ImageView imageview;
         public TextView title;
         public TextView contents;
