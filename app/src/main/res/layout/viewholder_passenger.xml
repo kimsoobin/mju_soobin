@@ -5,7 +5,7 @@
     android:layout_height="72dp">
 
     <ImageView
-        android:id="@+id/rider_c_imageView_1"
+        android:id="@+id/passenger_imageView_1"
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:src="@drawable/android"
@@ -16,32 +16,32 @@
         />
 
     <TextView
-        android:id="@+id/rider_c_textView_1"
+        android:id="@+id/passenger_textView_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:singleLine="true"
-        android:layout_toRightOf="@+id/rider_c_imageView_1"
-        android:layout_alignTop="@id/rider_c_imageView_1"
+        android:layout_toRightOf="@+id/passenger_imageView_1"
+        android:layout_alignTop="@id/passenger_imageView_1"
         android:layout_marginRight="80dp"
         />
 
     <TextView
-        android:id="@+id/rider_c_textView_3"
+        android:id="@+id/passenger_textView_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:singleLine="true"
-        android:layout_toRightOf="@+id/rider_c_textView_1"
-        android:layout_alignTop="@+id/rider_c_textView_1"
+        android:layout_toRightOf="@+id/passenger_textView_1"
+        android:layout_alignTop="@+id/passenger_textView_1"
         android:layout_marginLeft="60dp"/>
 
     <TextView
-        android:id="@+id/rider_c_textView_2"
+        android:id="@+id/passenger_textView_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:maxLines="3"
-        android:layout_toRightOf="@+id/rider_c_imageView_1"
-        android:layout_below="@+id/rider_c_textView_1"
+        android:layout_toRightOf="@+id/passenger_imageView_1"
+        android:layout_below="@+id/passenger_textView_1"
         android:layout_marginTop="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="8dp"

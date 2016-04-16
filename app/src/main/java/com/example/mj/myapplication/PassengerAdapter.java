@@ -50,10 +50,10 @@ public class PassengerAdapter extends BaseAdapter {
         convertView = inflater.inflate(layout_res_id, parent, false);
 
         room = new pRoomViewHolder();
-        room.imageview = (ImageView)convertView.findViewById(R.id.rider_c_imageView_1);
-        room.title = (TextView)convertView.findViewById(R.id.rider_c_textView_1);
-        room.contents = (TextView)convertView.findViewById(R.id.rider_c_textView_2);
-        room.date = (TextView)convertView.findViewById(R.id.rider_c_textView_3);
+        room.imageview = (ImageView)convertView.findViewById(R.id.rider_imageView_1);
+        room.title = (TextView)convertView.findViewById(R.id.rider_textView_1);
+        room.contents = (TextView)convertView.findViewById(R.id.rider_textView_2);
+        room.date = (TextView)convertView.findViewById(R.id.rider_textView_3);
 
         room.imageview.setImageResource(R.drawable.android);
         room.title.setText(items.get(position).title);
