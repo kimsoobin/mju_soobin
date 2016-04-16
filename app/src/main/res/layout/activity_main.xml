@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FFFFFF"
+    tools:context=".AuthActivity">
+
+    <RelativeLayout
+        android:id="@+id/reLayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/reLayout_2"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="16dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/android"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="32dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Application"
+            android:textSize="32dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/reLayout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="16dp"
+        >
+
+        <EditText
+            android:id="@+id/editText_1"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:hint = "ID"
+            android:textSize="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            />
+        <EditText
+            android:id="@+id/editText_2"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:hint="PW"
+            android:textSize="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/editText_1"
+            android:layout_marginBottom="16dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/reLayout_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reLayout_2"
+        >
+
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그인"
+            android:textSize="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="72dp"
+            />
+
+        <Button
+            android:id="@+id/button_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textSize="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="72dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
